@@ -20,7 +20,7 @@ class HomeFragment : Fragment () {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+//commentaire
         binding = HomeLayoutBinding.inflate(inflater, container, false)
         return binding.root
     }
