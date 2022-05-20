@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">FirstApp</string>
-    <string name="bienvenue_dans_votre_espaca_personnel">Bienvenue dans votre espaca personnel %s</string>
+    <string name="bienvenue_dans_votre_espace_personnel">Bienvenue dans votre espace personnel %s</string>
 </resources>

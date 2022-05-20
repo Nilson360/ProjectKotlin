@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.example.firstapp.databinding.HomeLayoutBinding
-import com.example.firstapp.databinding.SplashLayoutBinding
+
 
 class HomeFragment:Fragment() {
     private lateinit var binding: HomeLayoutBinding
@@ -22,6 +22,7 @@ class HomeFragment:Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.textView.text = getString(R.string.bienvenue_dans_votre_espaca_personnel, navArgs.name)
+
+        binding.textView.text=getString(R.string.bienvenue_dans_votre_espaca_personnel, navArgs.name)
     }
 }
