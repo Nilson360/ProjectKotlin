@@ -6,11 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.firstapp.databinding.SplashLayoutBinding
 
 class SplashFragment : Fragment() {
     private lateinit var binding: SplashLayoutBinding
+    private val viewModel: MainViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -22,7 +25,7 @@ class SplashFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        viewModel.getAllCountries()
         binding.btn1.setOnClickListener {
             val name = binding.editT.text.toString()
             if (!name.isNullOrBlank()) {
