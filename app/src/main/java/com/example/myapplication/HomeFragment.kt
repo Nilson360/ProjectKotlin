@@ -15,6 +15,7 @@ class HomeFragment : Fragment () {
     private lateinit var binding: HomeLayoutBinding
     private val navArgs : HomeFragmentArgs by navArgs()
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
