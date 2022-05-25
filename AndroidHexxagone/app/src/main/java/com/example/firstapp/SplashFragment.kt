@@ -32,7 +32,7 @@ class SplashFragment : Fragment() {
                     )
                 )
             } else {
-                Toast.makeText(requireContext(), "Entrez vottre nom", Toast.LENGTH_LONG).show()
+                Toast.makeText(requireContext(), "Entrez votre nom", Toast.LENGTH_LONG).show()
             }
         }
 
