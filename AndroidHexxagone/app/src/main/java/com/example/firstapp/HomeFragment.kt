@@ -30,21 +30,29 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-            binding.textView.text = getString(R.string.bienvenue_dans_votre_espace_personnel, navArgs.name, viewModel.count.toString())
+        binding.textView.text = getString(
+            R.string.bienvenue_dans_votre_espace_personnel,
+            navArgs.name,
+            viewModel.count.toString()
+        )
 
-          viewModel.count.observe(viewLifecycleOwner, androidx.lifecycle.Observer{
-                binding.textView.text = getString(R.string.bienvenue_dans_votre_espace_personnel, navArgs.name,viewModel.count.value.toString())
-            })
+        viewModel.count.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
+            binding.textView.text = getString(
+                R.string.bienvenue_dans_votre_espace_personnel,
+                navArgs.name,
+                viewModel.count.value.toString()
+            )
+        })
 
-            //Button plus
-            binding.btn2.setOnClickListener{
-                viewModel.plus()
+        //Button plus
+        binding.btn2.setOnClickListener {
+            viewModel.plus()
         }
-            binding.btn3.setOnClickListener{
-        viewModel.count.value?.let{
-            if (it>=1){
-                viewModel.moins()
-            }
+        binding.btn3.setOnClickListener {
+            viewModel.count.value?.let {
+                if (it >= 1) {
+                    viewModel.moins()
+                }
             }
 
         }

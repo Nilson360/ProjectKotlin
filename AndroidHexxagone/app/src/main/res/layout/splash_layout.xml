@@ -1,5 +1,4 @@
-<?xml
-    version="1.0" encoding="utf-8"?>
+<?xmlversion="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
@@ -26,10 +25,10 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
-            android:layout_marginBottom="400dp"
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="400dp"
             android:shadowColor="@color/white"
             android:text="Bienvenue sur myMovie"
             android:textColor="@color/black"

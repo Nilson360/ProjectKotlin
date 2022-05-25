@@ -4,7 +4,8 @@ import androidx.core.view.ContentInfoCompat
 
 data class CountryDTO(
     val Country: CountriesDto,
-        )
+)
+
 data class CountriesDto(
     val name: String,
     val capital: String,
@@ -12,6 +13,7 @@ data class CountriesDto(
     val flags: FlagsCountries,
     val region: String
 )
+
 data class FlagsCountries(
     val png: String,
     val svg: String,
